@@ -11,6 +11,8 @@ return elements in Last In First Out order.
    Make sure the Stack tests pass.
 3. What is the difference between using an array vs. a linked list when 
    implementing a Stack?
+      - Stack is applies in both Statis implementation (Arrays) and Dynamic implementation (Linked Lists)
+
 """
 from doubly_linked_list import DoublyLinkedList
 
@@ -21,6 +23,8 @@ class Stack:
        # self.storage = ?
         self.storage = DoublyLinkedList()
 
+    def len(self):
+        return self.size
 
     def push(self, value):
         self.value = value
@@ -37,6 +41,5 @@ class Stack:
             return self.storage.remove_from_head()
 
 
-    def len(self):
-        return self.size
+    
 
