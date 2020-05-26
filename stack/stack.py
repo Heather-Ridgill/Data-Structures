@@ -23,15 +23,15 @@ class Stack:
        # self.storage = ?
         self.storage = DoublyLinkedList()
 
-    def len(self):
-        return self.size
-
     def push(self, value):
         self.value = value
 
         self.storage.add_to_head(value)
         self.size += 1
 
+
+    def __len__(self):
+        return self.size
 
     def pop(self):
         if self.size == 0:
