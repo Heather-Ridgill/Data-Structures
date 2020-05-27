@@ -3,7 +3,6 @@
 # add to the front of a text buffer
 # delete from the back of a text buffer
 # delete from the front of a text buffer
-​
 # join text buffers together
 ​
 # add to the middle
